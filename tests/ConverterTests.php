@@ -12,7 +12,7 @@ class ConverterTests extends TestCase
     protected function setUp(): void 
     {
         $this->converter = new Converter();
-        $this->string = "Обратная строка!";
+        $this->string = "Привет! Давно не виделись.";
     }
 
 
@@ -25,7 +25,7 @@ class ConverterTests extends TestCase
 
     public function testReverseString()
     {
-        $etalon = "!акортс яантарбО";
+        $etalon = "Тевирп! Онвад ен ьсиледив.";
         $reverse_string = $this->converter->reverseString($this->string);
         $this->assertEquals($reverse_string, $etalon);
     }
