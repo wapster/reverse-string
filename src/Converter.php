@@ -4,7 +4,7 @@ class Converter
 {
     public $string;
 
-    public function reverseString($string): string 
+    public function reverseString(string $string): string 
     {
         $strrev = "";
         
